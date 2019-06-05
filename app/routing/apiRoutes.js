@@ -1,3 +1,4 @@
+var path = require("path");
 //should contain two routes:
 
 // A GET route with the url /api/friends. This will be used to display a JSON of all possible friends.
@@ -5,7 +6,7 @@
 
 module.exports = function(app) {
 	app.get("/api/friends", function(req, res) {
-		//display all people in ./app/data/friends.js
+		res.sendFile(path.join(__dirname, '../data/friends.js'));
 	});
 	
 	app.post("/api/friends", function(req, res) {
