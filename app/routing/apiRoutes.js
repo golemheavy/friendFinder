@@ -8,6 +8,14 @@ var friendData = require("../data/friends.js");
 
 module.exports = function(app) {
 	
+	function distance(arr) {
+		let distSquared = 0;
+		for (x in arr) {
+			distSquared += Math.pow(arr[x],2);
+		}
+		return Math.sqrt(distSquared);
+	}
+	
 	function rankMatches(scoresArr) {
 		
 		return friendData.friendsArr.map(x => {
@@ -43,7 +51,14 @@ module.exports = function(app) {
 		// friendData.friendsArr.push(req.body); this works but is not needed because we are not going to add user to friends data object
 		//res.json(true);
 		//console.log(req.body.scores);
-		console.log(rankMatches(req.body.scores));
+		let difArr = rankMatches(req.body.scores);
+		//let distArr = [];
+		console.log("\n\tnames and distance:\n");
+		for (x in friendData.friendsArr)
+		{
+			//distArr.push(distance(difArr[x]));
+			console.log("user distance from " + friendData.friendsArr[x].name + "\t" + difArr[x] + "\t=>\t" + distance(difArr[x]));
+		}
 		//rankMatches(req.body.scores);
 		
 	});
