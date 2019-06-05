@@ -62,11 +62,8 @@ module.exports = function(app) {
 		}
 		//rankMatches(req.body.scores);
 		console.log("\nassuming total orthogonality of measured personality dimensions, total distance array:");
-		console.log(distArr);
-		// need to sort array and then output results to page.
-		console.log(distArr.sort(function(a,b){return a[1] - b[1]}));
-		
-		
-		
+		let sortedArr = distArr.sort(function(a,b){return a[1] - b[1]});
+		console.log(sortedArr);
+		// need to output results to rendered page
 	});
 };
