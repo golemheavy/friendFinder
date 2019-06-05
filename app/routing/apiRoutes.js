@@ -11,8 +11,25 @@ module.exports = function(app) {
 	function rankMatches(scoresArr) {
 		
 		return friendData.friendsArr.map(x => {
-			return x.scores.map((y, index) => {return Math.abs(y - scoresArr[index]);});
+			
+			let difArr = [];
+			for (z in x.scores) {
+				difArr.push(Math.abs(x.scores[z] - scoresArr[z]));
+			}
+			return difArr;
+			//return x.scores.map((y, index) => {return Math.abs(y - scoresArr[index]);});
 		});
+		
+		/*
+		return distArr.map(a => {
+			let sumD = 0;
+			for (b in a) {
+				sumD += parseInt(b);
+			}
+			return sumD;
+		});
+		*/
+			
 	}
 	
 	app.get("/api/friends", function(req, res) {
