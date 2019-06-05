@@ -64,6 +64,9 @@ module.exports = function(app) {
 		console.log("\nassuming total orthogonality of measured personality dimensions, total distance array:");
 		console.log(distArr);
 		// need to sort array and then output results to page.
+		console.log(distArr.sort(function(a,b){return a[1] - b[1]}));
+		
+		
 		
 	});
 };
