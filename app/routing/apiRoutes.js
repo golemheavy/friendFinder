@@ -1,6 +1,6 @@
-var path = require("path");
+let path = require("path");
 
-var friendData = require("../data/friends.js");
+let friendData = require("../data/friends.js");
 //should contain two routes:
 
 // A GET route with the url /api/friends. This will be used to display a JSON of all possible friends.
@@ -10,7 +10,7 @@ module.exports = function(app) {
 	
 	function distance(arr) {
 		let distSquared = 0;
-		for (x in arr) {
+		for (let x in arr) {
 			distSquared += Math.pow(arr[x],2);
 		}
 		return Math.sqrt(distSquared);
@@ -21,7 +21,7 @@ module.exports = function(app) {
 		return friendData.friendsArr.map(x => {
 			
 			let difArr = [];
-			for (z in x.scores) {
+			for (let z in x.scores) {
 				difArr.push(Math.abs(x.scores[z] - scoresArr[z]));
 			}
 			return difArr;
@@ -52,14 +52,16 @@ module.exports = function(app) {
 		//res.json(true);
 		//console.log(req.body.scores);
 		let difArr = rankMatches(req.body.scores);
-		//let distArr = [];
+		let distArr = [];
 		console.log("\n\tnames and distance:\n");
-		for (x in friendData.friendsArr)
+		for (let x in difArr)
 		{
-			//distArr.push(distance(difArr[x]));
-			console.log("user distance from " + friendData.friendsArr[x].name + "\t" + difArr[x] + "\t=>\t" + distance(difArr[x]));
+			dist = distance(difArr[x]);
+			console.log("user distance from " + friendData.friendsArr[x].name + "\t" + difArr[x] + "\t=>\t" + dist);
+			distArr.push([friendData.friendsArr[x].name, dist]);
 		}
 		//rankMatches(req.body.scores);
-		
+		console.log("\nassuming total orthogonality of measured personality dimensions, total distance array:");
+		console.log(distArr);
 	});
 };
