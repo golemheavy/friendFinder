@@ -1,4 +1,7 @@
-let path = require("path");
+let distance = require('euclidean-distance');
+
+// let path = require("path"); // may not need this here?
+
 
 let friendData = require("../data/friends.js");
 //should contain two routes:
@@ -8,6 +11,7 @@ let friendData = require("../data/friends.js");
 
 module.exports = function(app) {
 	
+	/*
 	function distance(arr) {
 		let distSquared = 0;
 		for (let x in arr) {
@@ -15,6 +19,7 @@ module.exports = function(app) {
 		}
 		return Math.sqrt(distSquared);
 	}
+	*/
 	
 	function rankMatches(scoresArr) {
 		
@@ -51,13 +56,14 @@ module.exports = function(app) {
 		// friendData.friendsArr.push(req.body); this works but is not needed because we are not going to add user to friends data object
 		//res.json(true);
 		//console.log(req.body.scores);
-		let difArr = rankMatches(req.body.scores);
+		//let difArr = rankMatches(req.body.scores);
 		let distArr = [];
 		console.log("\n\tnames and distance:\n");
-		for (let x in difArr)
+		for (let x in friendData.friendsArr)
 		{
-			dist = distance(difArr[x]);
-			console.log("user distance from " + friendData.friendsArr[x].name + "\t" + difArr[x] + "\t=>\t" + dist);
+			let dist = distance(req.body.scores, friendData.friendsArr[x].scores);
+			//dist = distance(difArr[x]);
+			//console.log("user distance from " + friendData.friendsArr[x].name + "\t" + difArr[x] + "\t=>\t" + dist);
 			distArr.push([friendData.friendsArr[x].name, dist, x]);
 		}
 		//rankMatches(req.body.scores);
