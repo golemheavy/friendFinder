@@ -30,3 +30,5 @@ This image below illustrates that only the positive sub-sphere (of n dimensions,
 ![Positive Region of 3-sphere](./positiveSubsphere.png)
 
 by only considering points lying within regions which are defined by an r value (distance from origin) which is only a limited absolute value difference from R (user's distance from origin), we are able to eliminate a great deal of unnecessary computational workload, when we are only interested in finding the nearst neighbors to a point in 10-space.
+
+Essentially, with the right linear algebra approach we can perform more sophisticated analyses of the relative positions of data points. This is something that can be expanded in future iterations of this product.
