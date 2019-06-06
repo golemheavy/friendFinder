@@ -95,6 +95,38 @@ friendsArr : [
 						4,
 						5
 			]
+		},
+		{
+			"name":"Three Ghosts",
+			"photo":"https://media.giphy.com/media/VxEFCKjeELPOg/giphy.gif",
+			"scores":[
+						3,
+						3,
+						3,
+						3,
+						3,
+						3,
+						3,
+						3,
+						3,
+						3
+			]
+		},
+		{
+			"name":"Smurfette",
+			"photo":"https://media.giphy.com/media/mGBpRxlV28CAM/giphy.gif",
+			"scores":[
+						1,
+						1,
+						1,
+						1,
+						1,
+						1,
+						1,
+						1,
+						1,
+						1
+			]
 		}
 	]
 }
