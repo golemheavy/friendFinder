@@ -2,7 +2,7 @@ module.exports = {
 friendsArr : [
 		{
 			"name":"Spock",
-			"photo":"https://media.giphy.com/media/IL4iTvQH0MjS/giphy.gif",
+			"photo":"https://media.giphy.com/media/i9qmSfLuXXcXK/giphy.gif",
 			"scores":[
 						1,
 						2,
