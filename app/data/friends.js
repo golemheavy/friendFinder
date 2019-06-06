@@ -2,7 +2,7 @@ module.exports = {
 friendsArr : [
 		{
 			"name":"Spock",
-			"photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+			"photo":"https://media.giphy.com/media/IL4iTvQH0MjS/giphy.gif",
 			"scores":[
 						1,
 						2,
@@ -18,7 +18,7 @@ friendsArr : [
 		},
 		{
 			"name":"Data",
-			"photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+			"photo":"https://media.giphy.com/media/IL4iTvQH0MjS/giphy.gif",
 			"scores":[
 						2,
 						2,
@@ -34,7 +34,7 @@ friendsArr : [
 		},
 		{
 			"name":"Lore",
-			"photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+			"photo":"https://media.giphy.com/media/IL4iTvQH0MjS/giphy.gif",
 			"scores":[
 						4,
 						4,
@@ -50,7 +50,7 @@ friendsArr : [
 		},
 		{
 			"name":"Peppermint Patty",
-			"photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+			"photo":"https://media.giphy.com/media/IL4iTvQH0MjS/giphy.gif",
 			"scores":[
 						1,
 						1,
@@ -66,7 +66,7 @@ friendsArr : [
 		},
 		{
 			"name":"Knight Rider",
-			"photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+			"photo":"https://media.giphy.com/media/IL4iTvQH0MjS/giphy.gif",
 			"scores":[
 						5,
 						5,
@@ -82,7 +82,7 @@ friendsArr : [
 		},
 		{
 			"name":"Tomb Raider",
-			"photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+			"photo":"https://media.giphy.com/media/IL4iTvQH0MjS/giphy.gif",
 			"scores":[
 						5,
 						1,

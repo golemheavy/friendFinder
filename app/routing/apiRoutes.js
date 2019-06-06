@@ -58,12 +58,16 @@ module.exports = function(app) {
 		{
 			dist = distance(difArr[x]);
 			console.log("user distance from " + friendData.friendsArr[x].name + "\t" + difArr[x] + "\t=>\t" + dist);
-			distArr.push([friendData.friendsArr[x].name, dist]);
+			distArr.push([friendData.friendsArr[x].name, dist, x]);
 		}
 		//rankMatches(req.body.scores);
 		console.log("\nassuming total orthogonality of measured personality dimensions, total distance array:");
 		let sortedArr = distArr.sort(function(a,b){return a[1] - b[1]});
 		console.log(sortedArr);
-		// need to output results to rendered page
+		res.send({
+			name: sortedArr[0][0],
+			photo: friendData.friendsArr[sortedArr[0][2]].photo,
+			score: sortedArr[0][1]
+			});
 	});
 };
