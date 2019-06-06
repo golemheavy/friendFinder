@@ -15,13 +15,13 @@ module.exports = function(app) {
 		// friendData.friendsArr.push(req.body); this works but is not needed because we are not going to add user to friends data object
 		
 		let distArr = [];
-		console.log("\n\tnames and distance:\n");
 		for (let x in friendData.friendsArr)
 		{
 			let dist = distance(req.body.scores, friendData.friendsArr[x].scores);
 			distArr.push([friendData.friendsArr[x].name, dist, x]);
 		}
-		console.log("\nassuming total orthogonality of measured personality dimensions, total distance array:");
+		console.log("\nassuming total orthogonality of measured personality dimensions, measuring distance using n-dimensional euclidean distance, where n is the number of questions in the personality inventory.");
+		console.log("total distance array:\n");
 		let sortedArr = distArr.sort(function(a,b){return a[1] - b[1]});
 		console.log(sortedArr);
 		res.send({
