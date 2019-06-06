@@ -9,16 +9,16 @@ friendsArr : [
 						3,
 						4,
 						5,
-						1,
-						2,
-						3,
+						5,
 						4,
-						5
+						3,
+						2,
+						1
 			]
 		},
 		{
 			"name":"Data",
-			"photo":"https://media.giphy.com/media/IL4iTvQH0MjS/giphy.gif",
+			"photo":"https://media.giphy.com/media/229P3dnAW8RzceKbps/giphy.gif",
 			"scores":[
 						2,
 						2,
@@ -34,7 +34,7 @@ friendsArr : [
 		},
 		{
 			"name":"Lore",
-			"photo":"https://media.giphy.com/media/IL4iTvQH0MjS/giphy.gif",
+			"photo":"https://media.giphy.com/media/KD2CVz2VkQd1e/giphy.gif",
 			"scores":[
 						4,
 						4,
@@ -50,23 +50,23 @@ friendsArr : [
 		},
 		{
 			"name":"Peppermint Patty",
-			"photo":"https://media.giphy.com/media/IL4iTvQH0MjS/giphy.gif",
+			"photo":"https://media.giphy.com/media/ujI3HxifSCbew/giphy.gif",
 			"scores":[
 						1,
 						1,
 						2,
 						3,
 						5,
-						8,
 						1,
-						3,
+						1,
 						2,
-						1
+						3,
+						5
 			]
 		},
 		{
 			"name":"Knight Rider",
-			"photo":"https://media.giphy.com/media/IL4iTvQH0MjS/giphy.gif",
+			"photo":"https://media.giphy.com/media/Bo2WsocASVBm0/giphy.gif",
 			"scores":[
 						5,
 						5,
@@ -81,19 +81,19 @@ friendsArr : [
 			]
 		},
 		{
-			"name":"Tomb Raider",
-			"photo":"https://media.giphy.com/media/IL4iTvQH0MjS/giphy.gif",
+			"name":"Tomb Raider aka Lara Croft",
+			"photo":"https://media.giphy.com/media/BWoTSclVuMG3FvrX9I/giphy.gif",
 			"scores":[
 						5,
+						4,
+						3,
+						2,
 						1,
-						4,
-						4,
-						5,
 						1,
 						2,
-						5,
+						3,
 						4,
-						1
+						5
 			]
 		}
 	]
