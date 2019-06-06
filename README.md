@@ -24,3 +24,7 @@ For scalability, we may want to consider prioritizing and eliminating groups of 
 One way to do this may involve converting the n-dimentional rectangular coordinates into n-dimensional spherical coordinates, and only considering / ranking those nearest to the user's radius, or distance from the origin. If we only consider points those within an absolute value difference of a certain increment from the user's input, then we are searching a region of space equivalent to a n-hemisphere (because all values only run from 1 to 5, or 0 to 4 if you want to consider it that way, resulting in a total of 330 unique planes formed by the 10 orthogonal dimensions which have a maximum of 90 degrees of separation between axes. In other words, theta between any two points can not exceed 90 degrees, which provides a convenient limit to the maximum absolute separation possible between two points in the space.
 
 Another way to do this would be to limit comparison to those in neighboring regions or "quadrants". Perhaps overlapping neighborhoods, more than one to each friend, could be applied to the points, and could be used to filter the list of points which should be compared and ranked in terms of absolute distance.
+
+This image below illustrates that only the positive sub-sphere (of n dimensions, where n is the number of axes in our personality inventory). Only the positive sub-sphere is the region inhabitated by our data points.
+
+![Positive Region of 3-sphere](./positiveSubsphere.png)
