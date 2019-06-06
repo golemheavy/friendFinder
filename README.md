@@ -28,3 +28,5 @@ Another way to do this would be to limit comparison to those in neighboring regi
 This image below illustrates that only the positive sub-sphere (of n dimensions, where n is the number of axes in our personality inventory). Only the positive sub-sphere is the region inhabitated by our data points.
 
 ![Positive Region of 3-sphere](./positiveSubsphere.png)
+
+by only considering points lying within regions which are defined by an r value (distance from origin) which is only a limited absolute value difference from R (user's distance from origin), we are able to eliminate a great deal of unnecessary computational workload, when we are only interested in finding the nearst neighbors to a point in 10-space.
